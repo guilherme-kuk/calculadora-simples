@@ -80,3 +80,21 @@ body {
 .operator:hover, .btn-eq:hover {
     background-color: #005d00
 }
+
+@media (max-width: 375px) {
+    .container {
+        width: 370px;
+    }
+
+    .container h1 {
+        font-size: 1.5em;
+    }
+
+    .container .display {
+        width: 100%;
+    }
+
+    .btn {
+        width: 80px;
+    }
+}
