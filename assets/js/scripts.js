@@ -1,5 +1,4 @@
 let input = document.querySelector('.display');
-let btnNum = document.querySelector('.btn-num');
 let formatError = document.querySelector('.hide-error');
 const CODE_ENTER = 13;
 const CODE_VIRGULA = ',';
