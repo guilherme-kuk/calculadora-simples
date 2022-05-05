@@ -45,9 +45,16 @@ $('.display').on('input', function () {
     this.value = this.value.replace(CODE_VIRGULA, '.');
 });
 
+// permitir remover classe hideError com Backspace
+document.addEventListener('keyup', e => {
+    if (e.key === 'Backspace') {
+        removeHideError();
+    }
+});
+
 // Limpar input com C ou ESC
 document.addEventListener('keyup', e => {
-    if (e.key === 'c' || e.key === 'C' || e.key=== 'Escape') {
+    if (e.key === 'c' || e.key === 'C' || e.key === 'Escape') {
         console.log(e);
         input.value = '';
         removeHideError();
