@@ -55,7 +55,6 @@ document.addEventListener('keyup', e => {
 // Limpar input com C ou ESC
 document.addEventListener('keyup', e => {
     if (e.key === 'c' || e.key === 'C' || e.key === 'Escape') {
-        console.log(e);
         input.value = '';
         removeHideError();
     }
