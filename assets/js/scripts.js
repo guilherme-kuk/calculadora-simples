@@ -41,9 +41,16 @@ document.addEventListener('keypress', e => {
 });
 
 // Substituição da virgula por ponto no input
+$('.display').on('input', function () {
+    this.value = this.value.replace(CODE_VIRGULA, '.');
+});
+
+// Limpar input com C ou ESC
 document.addEventListener('keyup', e => {
-    if (e.key === CODE_VIRGULA) {
-        input.value = input.value.replaceAll(',', '.');
+    if (e.key === 'c' || e.key === 'C' || e.key=== 'Escape') {
+        console.log(e);
+        input.value = '';
+        removeHideError();
     }
 });
 
